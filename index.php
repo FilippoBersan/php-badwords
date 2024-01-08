@@ -1,3 +1,11 @@
+<?php
+
+$frase = 'Frase: ciao mangio la pizza';
+$parola = 'Parola da censurare: mangio';
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +15,36 @@
 </head>
 <body>
 
-<form action="dati.php" method="GET">
+
+
+<form action="frase.php" method="GET">
   <label for="frase">Frase:</label>
-  <input type="text" id="frase">
+  <input type="text" id="frase" name="frase">
   <label for="parola">Parola da censurare:</label>
-  <input type="text" id="parola">
+  <input type="text" id="parola" name="parola" >
   <button>Invia il modulo</button>
   
 
 
 </form>
+
+<p>
+<?php
+echo $frase;
+
+
+?>
+</p>
+
+
+<p>
+<?php
+echo $parola;
+
+
+?>
+</p>
+  
   
 </body>
 </html>
