@@ -63,7 +63,7 @@ echo  $_GET['frase'];
   parola censurata :
   <?php
 
-  echo $_GET['parolacensurata'] = str_replace("mangio", "***",  $_GET['parola']);
+  echo $_GET['parolacensurata'] = str_replace( $_GET['parola'], "***",  $_GET['parola']);
 
 
 ?>
@@ -73,7 +73,7 @@ echo  $_GET['frase'];
  frase censurata:
   <?php
 
-  echo $_GET['parola'] = str_replace("mangio", "***",  $_GET['frase']);
+  echo $_GET['parola'] = str_replace( $_GET['parola'], "***",  $_GET['frase']);
 
 
 ?>
